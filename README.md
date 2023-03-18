@@ -19,6 +19,7 @@ TODO's  before project start:
 This is a habit tracking application. It gives the user the ability to create habits, and store records of the habits in a database (Sqlite).
 The user must be able to: Create a habit -> and select how to record it. 
 Get the data from the habit, including basic search functionality. 
+Could do a person table - With a one-to-many relationship to the Habits tables
 
 Requirements:
 - Menu with options to choose from: 

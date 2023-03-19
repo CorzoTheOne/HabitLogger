@@ -9,7 +9,8 @@ namespace HabitLogger.Views
     /// <summary>
     /// This habit is responsible for displaying the habits and guiding the user.
     /// </summary>
-    internal class HabitView
+    public class HabitView
     {
+
     }
 }

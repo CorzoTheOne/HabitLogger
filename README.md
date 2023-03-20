@@ -1,5 +1,10 @@
 # HabitLogger
 
+TODO's
+- Add functionality to check if table with name already exists. 
+
+DESCRIPTION AND REQUIREMENTS:
+
 In this application - i need to be able to create and track habits. 
 The app stores and retrieves data from a real database. 
 On startup - Create a 'SQLite' database, if one isn't present.

@@ -9,10 +9,6 @@ namespace HabitLogger.Models
 {
     public static class HabitModel
     {
-        private static readonly string Name;
-        private static readonly int Id;
-        
-
         /// <summary>
         /// TODO : Make the stringbuilder that will be used to structure the queryable CommandText call.
         /// </summary>
@@ -35,16 +31,5 @@ namespace HabitLogger.Models
                 connection.Close();
             }
         }
-
-        /// <summary>
-        /// Builds the CommandText string object that is passed to the Habit creator. 
-        /// </summary>
-        /// <returns>A string </returns>
-
-
-
-
-
-
     }
 }

@@ -11,5 +11,15 @@ namespace HabitLogger.Views
     /// </summary>
     internal class RecordView
     {
+        public static void ViewAddRecord()
+        {
+
+        }
+
+        public static void ViewAllRecords() { }
+
+        public static void DeleteARecord() { }
+        public static void UpdateARecord() { }
+
     }
 }

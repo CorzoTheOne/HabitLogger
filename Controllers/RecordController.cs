@@ -11,5 +11,10 @@ namespace HabitLogger.Controllers
     /// </summary>
     internal class RecordController
     {
+        public static void AddEntryToHabit() { }
+        public static void GetAllRecords() { }
+        public static void ChangeARecord(int id) { }
+        public static void DeleteRecord(int id) { }
+        
     }
 }

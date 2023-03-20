@@ -66,10 +66,30 @@ namespace HabitLogger.Controllers
             return fieldData;
         }
 
+        /// <summary>
+        /// This function creates the query for users to generate a new table in the database. 
+        /// </summary>
+        /// <returns></returns>
         public static StringBuilder CreateQueryCommand()
         {
             // TODO : Add Viewmessage that asks the user for the name of the habit.
-            string habitName = Console.ReadLine();
+            Console.WriteLine("enter name");
+
+            string habitName = "New_Table";
+            bool habitNameNotGood = true;
+            while (habitNameNotGood)
+            {
+
+                habitName = Console.ReadLine();
+                if (habitName.Length == 0)
+                {
+                    // TODO : add message
+                    continue;
+                }
+                habitNameNotGood = false;
+            }
+
+
             StringBuilder command = new();
             List<(string, string)> fieldsList = new();
 
@@ -109,5 +129,7 @@ namespace HabitLogger.Controllers
             Console.WriteLine(command);
             return command;
         }
+    
+        
     }
 }

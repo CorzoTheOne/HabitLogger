@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.Sqlite;
 using System.Text;
 using HabitLogger.Models;
+using HabitLogger.Views;
 
 /*
 string connectionString = @"Data Source=habit-Tracker.db";
@@ -29,8 +30,13 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        StringBuilder test = new();
-        test = HabitLogger.Controllers.HabitController.CreateQueryCommand("new_table");
-        HabitModel.AddHabitToDB(test);
+
+        RecordModel recordModel = new RecordModel();
+        recordModel.GetFields("table_name");
+        //StringBuilder test = new();
+        //test = HabitLogger.Controllers.HabitController.CreateQueryCommand();
+        //HabitModel.AddHabitToDB(test);
+        MainMenuView.DisplayMainMenu();
+        HabitView.GetHabitList();
     }
 }

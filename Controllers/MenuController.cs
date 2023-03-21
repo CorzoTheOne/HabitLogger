@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HabitLogger.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,7 +41,11 @@ namespace HabitLogger.Controllers
                 }
             }
         }
-        public static void MenuAddEntryToHabit() { }
+        public static void MenuAddEntryToHabit() 
+        {
+            string habitName = RecordView.SelectHabitToAddEntryTo();
+            RecordController.AddEntryToHabit(habitName);
+        }
         public static void MenuViewHabits() { }
         public static void MenuAddHabit() { }
 

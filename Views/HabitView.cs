@@ -45,11 +45,21 @@ namespace HabitLogger.Views
             {
                 connection.Open();
                 reader = command.ExecuteReader();
-
+                int inc = 0;
                 while (reader.Read())
                 {
-                    Console.WriteLine("Name = " + reader.GetString(0));
+                    if (inc == 0)
+                    {
+                        inc++;
+                        continue;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{inc} = " + reader.GetString(0));
+                        inc++;
+                    }
                 }
+                connection.Close();
             }
         }
 

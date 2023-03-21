@@ -23,13 +23,18 @@ namespace HabitLogger.Models
                 var tableCmd = connection.CreateCommand();
                 string commands = command.ToString();
                 Console.WriteLine(commands);
-                tableCmd.CommandText =
-                    $"{commands}";
+                tableCmd.CommandText = $"{commands}";
 
                 tableCmd.ExecuteNonQuery();
 
                 connection.Close();
             }
         }
+
+
+
+
+
+
     }
 }
